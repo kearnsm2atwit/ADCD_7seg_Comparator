@@ -1,0 +1,82 @@
+|lab05
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+C => always0.IN1
+C => always0.IN1
+Z1[0] <= sevenseg:segone.port1
+Z1[1] <= sevenseg:segone.port1
+Z1[2] <= sevenseg:segone.port1
+Z1[3] <= sevenseg:segone.port1
+Z1[4] <= sevenseg:segone.port1
+Z1[5] <= sevenseg:segone.port1
+Z1[6] <= sevenseg:segone.port1
+Z1[7] <= sevenseg:segone.port1
+Z2[0] <= sevenseg:segtwo.port1
+Z2[1] <= sevenseg:segtwo.port1
+Z2[2] <= sevenseg:segtwo.port1
+Z2[3] <= sevenseg:segtwo.port1
+Z2[4] <= sevenseg:segtwo.port1
+Z2[5] <= sevenseg:segtwo.port1
+Z2[6] <= sevenseg:segtwo.port1
+Z2[7] <= sevenseg:segtwo.port1
+Z3[0] <= sevenseg:segthree.port1
+Z3[1] <= sevenseg:segthree.port1
+Z3[2] <= sevenseg:segthree.port1
+Z3[3] <= sevenseg:segthree.port1
+Z3[4] <= sevenseg:segthree.port1
+Z3[5] <= sevenseg:segthree.port1
+Z3[6] <= sevenseg:segthree.port1
+Z3[7] <= sevenseg:segthree.port1
+
+
+|lab05|sevenseg:segone
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+Z[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Z[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Z[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Z[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Z[7] <= <VCC>
+
+
+|lab05|sevenseg:segthree
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+Z[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Z[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Z[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Z[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Z[7] <= <VCC>
+
+
+|lab05|sevenseg:segtwo
+A[0] => Decoder0.IN3
+A[1] => Decoder0.IN2
+A[2] => Decoder0.IN1
+A[3] => Decoder0.IN0
+Z[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+Z[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+Z[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+Z[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+Z[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+Z[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+Z[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+Z[7] <= <VCC>
+
+
