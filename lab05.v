@@ -1,6 +1,6 @@
 module lab05(input [3:0]A, B, input C, output [7:0]Z1, Z2, Z3);
 
-	reg [3:0]X;									// Register to use as input for HEX[0]
+	reg [3:0]X;						// Register to use as input for HEX[0]
 	sevenseg segone(A, Z1);					// Display input 1 on HEX[4]
 	sevenseg segthree(B, Z3);				// Display input 2 on HEX[2]
 	sevenseg segtwo(X, Z2);					// Display min/max on HEX[0]
