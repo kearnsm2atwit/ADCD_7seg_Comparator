@@ -10,11 +10,11 @@ module lab05(input [3:0]A, B, input C, output [7:0]Z1, Z2, Z3);
 		
 		begin						
 			if(C == 1'b0 && A > B)			// If the button is pressed and A is the max
-				X = A;							// Display A on HEX[0]
-			else if (C == 1'b1 && A < B)	// If the button is not pressed and A is the min
-				X = A;							// Display A on HEX[0]
-			else									// Else statement covers both cases for displaying B
-				X = B;							// Display B on HEX[0]
-		end										// End always block
+				X = A;				// Display A on HEX[0]
+			else if (C == 1'b1 && A < B)		// If the button is not pressed and A is the min
+				X = A;				// Display A on HEX[0]
+			else					// Else statement covers both cases for displaying B
+				X = B;				// Display B on HEX[0]
+		end						// End always block
 		
 endmodule
