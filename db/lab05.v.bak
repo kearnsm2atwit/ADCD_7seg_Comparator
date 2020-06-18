@@ -1,0 +1,14 @@
+module 7seg (input [3:0]A, output [7:0]Z);
+
+	always @ (A) begin
+		case(A)
+			4'b0000: Z = 8'b11111100;	// 0 on 7-seg
+			4'b0001: Z = 8'b01100000;	// 1 on 7-seg
+			4'b0010: Z = 8'b11011010;	// 2 on 7-seg
+			4'b0011: Z = 8'b11110010;	// 3 on 7-seg
+			4'b0100: Z = 8'b01100110;	// 4 on 7-seg
+			
+		endcase
+	end
+	
+endmodule

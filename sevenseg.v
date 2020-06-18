@@ -1,7 +1,7 @@
 module sevenseg (input [3:0]A, output reg [7:0]Z);
 
-	always @ (A) begin				// Always block to run when input A changes
-		case(A)					// Case statement for all possibilities of 4-bit input A
+	always @ (A) begin					// Always block to run when input A changes
+		case(A)								// Case statement for all possibilities of 4-bit input A
 			4'b0000: Z = 8'b11000000;	// 0 on 7-seg
 			4'b0001: Z = 8'b11111001;	// 1 on 7-seg
 			4'b0010: Z = 8'b10100100;	// 2 on 7-seg
